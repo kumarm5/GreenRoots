@@ -1,0 +1,72 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+:root{
+  --gr-primary: #2F855A;
+  --gr-dark: #22543D;
+  --gr-accent: #38A169;
+  --gr-light: #E6FFFA;
+  --gr-bg: #F8FAF8;
+  --gr-card: #FFFFFF;
+  --text-primary: #1A202C;
+  --text-secondary: #4A5568;
+  --radius: 20px;
+}
+
+/* Base */
+html, body, #root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--gr-bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Smooth images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card hover helper */
+.card-elevated {
+  border-radius: var(--radius);
+  background: var(--gr-card);
+  box-shadow: 0 8px 30px rgba(17,24,39,0.06);
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+.card-elevated:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 50px rgba(17,24,39,0.08);
+}
+
+/* Soft fade-in */
+@keyframes grFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.gr-fade-in { animation: grFadeIn .56s ease both; }
+
+/* Form input large */
+.MuiInputBase-root {
+  border-radius: 12px;
+}
+
+/* Utility spacing */
+.container-wide {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Make footer links subtle */
+.footer-link { color: var(--text-secondary); text-decoration: none; }
+.footer-link:hover { color: var(--gr-dark); text-decoration: underline; }

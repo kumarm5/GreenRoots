@@ -1,0 +1,36 @@
+{
+  "name": "greenroots-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GreenRoots landing page (React 18 + MUI)",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --fix"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.13.7",
+    "@mui/material": "^5.13.7",
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.79.0",
+    "react-router-dom": "^6.14.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.50.0",
+    "eslint-plugin-react": "^7.33.1",
+    "vite": "^5.1.7"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "GreenRoots",
+  "license": "MIT"
+}
