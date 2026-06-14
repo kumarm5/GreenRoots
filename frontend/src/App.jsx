@@ -12,6 +12,7 @@ import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import ChooseJourney from "./pages/ChooseJourney";
 import AuthPage from "./pages/AuthPage";
+import SupporterDashboard from "./pages/SupporterDashboard";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <Box component="main">
         <Routes>
           <Route path="/auth" element={<AuthPage />} />
+          <Route path="/supporter-dashboard" element={<SupporterDashboard />} />
           <Route
             path="/"
             element={

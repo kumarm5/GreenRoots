@@ -104,7 +104,7 @@ export default function AuthPage() {
     setServerError("");
     setLoading(true);
     try {
-      const res = await axios.post("/api/accounts/login/", {
+      const res = await axios.post("http://localhost:8000/api/accounts/login/", {
         email: data.email,
         password: data.password,
       });
